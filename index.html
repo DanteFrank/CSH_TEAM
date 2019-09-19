@@ -1,40 +1,62 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="./css/main.css">
-<link rel="stylesheet" type="text/css" href="./css/sign_up.css">
-<link rel="Signup" type="text/html" href="sign_up.html">
+<html lang="en">
 
+<head>
+	<title>TEAM CSH</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="Signup" type="text/html" href="sign_up.html">
 </head>
+
 <body>
-        <div class="topnav">
-                <a class="active" href="index.html">Home</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-              </div>
-    <h1>WELCOME TO CSH</h1>
-    <div class="form-cont">
-      <form class="authenticate" action="#">
-    
-        <div class="container">
-          <label for="email"><b>Email Address</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-    
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Password" name="psw" required>
-            
-          <button type="submit" class="login">Login</button>
-          <button type="button" class="Signup"><a href="sign_up.html">Sign Up</a></button>
-          <label for="check">Remember me</label>
-            <input type="checkbox" checked="checked" name="remember" id="check"> 
-        </div>
-    
-        <div class="container">
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-      </div>
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="#contact">Contact</a>
+		<a href="#about">About</a>
+	</div>
+	<h1>WELCOME TO CSH</h1>
+
+
+	<div class="container-login">
+		<div class="wrap-login">
+			<div class="login-form-title" style="background-image: url(images/img1.png);">
+				<span class="login-form-title-1">
+					Sign In
+				</span>
+			</div>
+
+			<form class="login-form" action="#" method="post">
+				<div class="wrap-input">
+					<span class="label-input">Email Address</span>
+					<input class="input" type="email" name="email" placeholder="Enter Email Address" required>
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<span class="label-input">Password</span>
+					<input class="input" type="password" name="pass" placeholder="Enter password" required>
+					<span class="focus-input"></span>
+				</div>
+
+
+				<div>
+						<fieldset class="checkbox">
+								<input type="checkbox" name="remember" id="remember" />Remember Password 
+							</fieldset>
+				</div>
+
+				<button class="signup-form-btn" type="button"><a href="sign_up.html">Signup</a></button>
+				<button class="login-form-btn" type="submit" data-submit="sending....">Login </button>
+
+
+			</form>
+		</div>
+	</div>
+
+
+
 </body>
+
 </html>

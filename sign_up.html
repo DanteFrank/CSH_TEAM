@@ -1,61 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/sign_up.css">
-    <link rel="Signup" type="text/html" href="sign_up.html">
-
+	<title>TEAM CSH</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/sign_up.css">
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div>
-    <h1>SIGN UP</h1>
-    <div class="sign-up-form">
-        <form class="authenticate" action="#">
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="#contact">Contact</a>
+		<a href="#about">About</a>
+	</div>
 
-            <div class="container">
-                <label for="Fname"><b>First Name</b></label>
-                <input type="text" placeholder="" name="Fname" required>
-                <label for="Lname"><b>Second Name</b></label>
-                <input type="text" placeholder="" name="Lname" required>
-                <label for="Addr"><b>Address</b></label>
-                <input type="text" placeholder="" name="Addr" required>
-                <label for="City"><b>City</b></label>
-                <input type="text" placeholder="" name="City" required>
-                <label for="Natio"><b>Nationality</b></label>
-                <input type="text" placeholder="" name="Natio" required>
-                <label for="email"><b>Email Address</b></label>
-                <input type="email" placeholder="Enter Email" name="email" required>
-                <label for="Pnum"><b>Phone Number</b></label>
-                <input type="tel" placeholder="" name="Pnum" required><br>
-                <label for="Uname"><b>User Name</b></label>
-                <input type="text" placeholder="" name="Uname" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Password" name="psw" required>
-                <label for="Cpsw"><b>Confirm Password</b></label>
-                <input type="password" placeholder="Password" name="Cpsw" required>
-                <label for="security">Security Questions</label>
-                <select name="security" required>
-                    <option disabled selected></option>
-                    <option value="Mr">What's the name of your favourite uncle?</option>
-                    <option value="Mrs">What's the name of your favourite car?</option>
-                    <option value="Ms">What's the name of your pet?</option>
-                    <option value="Engr">what's your mother's maiden name?</option>
-                    <option value="Dr">what's your favourite city?</option>
-                </select><br>
-                <button type="submit" class="Signup">Sign Up</a></button>
+	<div class="container-signup">
+		<div class="wrap-signup">
+
+			<form class="sign-form" action="#">
+				<div class="wrap-input">
+					<span class="label-input">First Name</span>
+					<input class="input" type="text" placeholder="" name="Fname" required>
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<span class="label-input">Second Name</span>
+					<input class="input" type="text" placeholder="" name="Lname" required>
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<span class="label-input">Address</span>
+					<input class="input" type="text" placeholder="" name="Addr" required>
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<span class="label-input">City</span>
+					<input class="input" type="text" placeholder="" name="City" required>
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<span class="label-input">Nationality</span>
+					<input class="input" type="text" placeholder="" name="Natio" required>
+					<span class="focus-input"></span>
+				</div>
 
 
-            </div>
-        </form>
-    </div>
+				<div class="wrap-input">
+					<span class="label-input">Email Address</span>
+					<input class="input" type="email" placeholder="Enter Email" name="email" required>
+					<span class="focus-input"></span>
+				</div>
+				<div class="wrap-input">
+					<span class="label-input">Phone Number</span>
+					<input class="input" type="tel" placeholder="" name="Pnum" required>
+					<span class="focus-input"></span>
+				</div>
+
+
+				<div class="wrap-input">
+					<span class="label-input">User Name</span>
+					<input class="input" type="text" placeholder="" name="Uname" required>
+					<span class="focus-input"></span>
+				</div>
+
+
+				<div class="wrap-input">
+					<span class="label-input">Password</span>
+					<input class="input" type="password" placeholder="Password" name="psw" required>
+					<span class="focus-input"></span>
+				</div>
+
+
+				<div class="wrap-input">
+					<span class="label-input">Confirm Password</span>
+					<input class="input" type="password" placeholder="Password" name="Cpsw" required>
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+				<span class="label-input">Security Questions</span>
+				<select name="security" required>
+					<option disabled selected></option>
+					<option value="Mr">What's the name of your favourite uncle?</option>
+					<option value="Mrs">What's the name of your favourite car?</option>
+					<option value="Ms">What's the name of your pet?</option>
+					<option value="Engr">what's your mother's maiden name?</option>
+					<option value="Dr">what's your favourite city?</option>
+				</select>
+				</div><br>
+				<button type="submit" class="signup-form-btn">Sign Up</a></button>
+
+
+		</form>
+	</div>
+	</div>
 </body>
 
 </html>
