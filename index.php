@@ -4,7 +4,7 @@
 
 <main>
         <div class="main">
-            <section class="">
+            <section>
                 <?php 
                 if (isset($_SESSION['userId'])) {
                     echo '<h1 class="sign">Welcome To CSH!</h1>';
