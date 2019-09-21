@@ -1,0 +1,392 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #0fecaa;
+  color: white;
+}
+
+/*---------------------------------------------*/
+a {
+	font-size: 14px;
+	line-height: 1.7;
+	color: white;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+  color: #57b846;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+h1{
+  padding: 5%;
+  text-align: center;
+  background-color: #0f81ec;
+  color: #e6e6e6;
+}
+
+p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {background-color: #555555;
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+
+
+label {
+  display: block;
+  margin: 0;
+}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+
+
+.container-login {
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #0f81ec;
+  margin-top: 0%;
+}
+
+
+.wrap-login {
+  width: 670px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: -25%;
+}
+
+/*==================================================================
+[ Title form ]*/
+.login-form-title {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 70px 15px 74px 15px;
+}
+
+.login-form-title-1 {
+  font-family: Poppins-Bold;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.login-form-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(54,84,99,0.7);
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 43px 88px 93px 190px;
+}
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.label-input {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  text-align: right;
+
+  position: absolute;
+  top: 14px;
+  left: -105px;
+  width: 80px;
+
+}
+
+/*---------------------------------------------*/
+.input {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0 5px;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #57b846;
+}
+
+
+/*---------------------------------------------*/
+input.input {
+  height: 45px;
+}
+
+
+.input:focus + .focus-input::before {
+  width: 100%;
+}
+
+.has-val.input + .focus-input::before {
+  width: 100%;
+}
+
+/*==================================================================
+[ Restyle Checkbox ]*/
+
+.input-checkbox {
+  display: none;
+}
+
+.label-checkbox {
+  font-family: Poppins-Regular;
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.4;
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+}
+
+.label-checkbox::before {
+  font-size: 13px;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-checkbox:checked + .label-checkbox::before {
+  color: #57b846;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+.login-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  height: 50px;
+  background-color: #0f81ec;
+  border-radius: 25px;
+  margin-top: 5px;
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  transition: all 0.4s;
+}
+
+.login-form-btn:hover {
+  background-color: #333333;
+}
+.signup-form-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #0f81ec;
+  border-radius: 25px;
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  transition: all 0.4s;
+  margin-top: 10px;
+}
+
+.signup-form-btn a{
+  text-decoration: none;
+}
+
+
+.signup-form-btn:hover {
+  background-color: #333333;
+}
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+
+
+
+.checkbox {
+  margin-top: 2px;
+  text-align: right;
+  font-size: 15px;
+  color: #074978;
+  border: none;
+}
+
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
